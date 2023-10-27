@@ -28,7 +28,23 @@ public class EJERCICIO_3 {
         positivos=0;
         negativos=0;
         for (int i =0; i<T; i++){
+            if (numero[i]==numero[i]/2){
+                par++;
+            }else
+                impar++;
+            if (numero[i]==0){
+                ceros++;
+            }
+            if (numero[i]<0){
+                negativos++;
+            }else
+                positivos++;
         }
+        System.out.println("La cantidad de numeros positivos es: "+positivos);
+        System.out.println("La cantidad de numeros negativos es: "+negativos);
+        System.out.println("La cantidad de numeros pares es: "+par);
+        System.out.println("La cantidad de numeros impares es: "+impar);
+        System.out.println("La cantidad de ceros son: "+ceros);
 
 
 
